@@ -1,0 +1,19 @@
+main {
+    background-color: #222;
+}
+.user_info p {
+    color: rgba(255, 255, 255, .9);
+}
+
+.settings_block ul li {
+    background-color: #333;
+}
+.settings_block ul li span {
+    color: rgba(255, 255, 255, .75) !important;
+}
+.settings_block ul li img {
+    filter: invert(1);
+}
+.title {
+    color: rgba(255, 255, 255, .3) !important;
+}

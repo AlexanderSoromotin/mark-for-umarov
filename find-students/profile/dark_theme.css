@@ -1,0 +1,33 @@
+body {
+    background-color: #222 !important;
+}
+main {
+    background-color: #333 !important;
+}
+.profile_info {
+    background-color: #333 !important;
+}
+.personal_info .user_name {
+    color: rgba(255, 255, 255, .9);
+}
+.personal_info .user_status {
+    color: rgba(255, 255, 255, .4);
+}
+.local_info div p:nth-child(1) {
+    color: rgba(255, 255, 255, .9);
+}
+.local_info div p:nth-child(2) {
+    color: rgba(255, 255, 255, .4);
+}
+.info_about_education label {
+    color: rgba(255, 255, 255, .9);
+}
+.info_about_education p {
+    color: rgba(255, 255, 255, .4);
+}
+.edit_profile {
+    filter: invert(1);
+}
+.empty {
+    color: rgba(255, 255, 255, .3);
+}

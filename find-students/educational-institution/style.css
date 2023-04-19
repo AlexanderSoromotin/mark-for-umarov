@@ -1,0 +1,347 @@
+main {
+	position: relative;
+	margin-top: 50px;
+	background-color: #fff;
+	padding-top: 10px;
+	/*padding-bottom: 30px;*/
+	max-height: calc(100vh - 100px);
+	min-height: calc(100vh - 100px);
+	overflow-y: auto;
+	border-bottom: 50px;
+	height: 100%;
+	overflow-x: hidden;
+}
+body {
+	/*background-color: #fff !important;*/
+}
+main .avatar {
+	height: 45px;
+	width: 45px;
+}
+.settings_screen {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+}
+.select_element {
+	position: relative;
+	display: none;
+}
+.select_city {
+	display: inline;
+}
+.select_element label {
+	font-weight: 600;
+}
+.elements_list {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+
+.elements_list .element {
+	transition: .5s;
+	position: relative;
+	display: flex;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
+	border-radius: 10px;
+	padding: 5px;
+	align-items: center;
+	margin-bottom: 5px;
+	transform: translateX(-100vw);
+	opacity: 0;
+}
+
+.select_city .element {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.elements_list .element .button {
+	position: absolute;
+	right: 10px;
+}
+.elements_list .element .button button {
+	width: 98px;
+	height: 32px;
+}
+.elements_list .element .button .loading::after {
+	filter: invert(1);
+	height: 30px;
+	width: 30px;
+}
+.elements_list .element .title {
+	width: calc(100% - 32px - 45px - 100px);
+	font-size: 14px;
+}
+
+
+.elements_list .element .title p:nth-child(2) {
+	font-size: 10px;
+	color: rgba(0, 0, 0, .7);
+	word-break: break-word;
+}
+
+
+.button-5 {
+	opacity: .2 !important;
+}
+
+.screen {
+	transition: .5s;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	opacity: 1;
+	min-height: 100%;
+}
+.screen.hidden {
+	/*right: calc(var(--vw, 1vh) * 100) !important;*/
+	/*right: -980px !important; */
+	transform: translate(100%, 0%);
+	opacity: 0 !important;
+}
+.screen.deleted {
+	/*left: calc(var(--vw, 1vh) * 100) !important;*/
+	/*left: -980px !important;*/
+	transform: translate(-100%, 0%);
+	opacity: 0 !important;
+}
+.groups_screen {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.groups_screen .group {
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	/*width: calc(100% - 10px);*/
+	max-width: 430px;
+}
+.groups_screen .group .avatar {
+	width: 107px;
+	height: 107px;
+}
+.groups_screen .group_name {
+	font-weight: 600;
+}
+.groups_screen .institute_info {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .4);
+	margin-top: 3px;
+}
+.groups_screen .institute_info img {
+	height: 15px;
+	opacity: .4;
+	margin-top: -1px;
+}
+.bullet_point {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	/*background-color: rgba(0, 0, 0, .5);*/
+	background-color: #27A36B;
+}
+.students_info {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(0, 0, 0, .5);
+	font-weight: 600;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.students_info img {
+	height: 19px;
+	opacity: .5;
+	margin-right: 5px;
+}
+.students_info .bullet_point {
+	margin-right: 9px;
+	margin-left: 5px;
+}
+.head_of_group_info {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(0, 0, 0, .5);
+	font-weight: 600;
+	font-size: 12px;
+}
+.head_of_group_info a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, .5);
+	font-weight: 600;
+	font-size: 12px;
+}
+.head_of_group_info img {
+	height: 19px;
+	opacity: .5;
+	margin-right: 5px;
+}
+.groups_screen .info {
+	width: calc(100% - 117px);
+}
+.groups_screen .info button {
+	margin-top: 10px;
+	width: 100%;
+}
+.groups_screen .info .button-5 {
+	opacity: .6 !important;
+}
+.description {
+	text-align: center;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .3);
+	/*margin-top: 19px;*/
+}
+
+.settings_screen .groups_list {
+	position: relative;
+	width: calc(100% - 20px);
+	margin-left: 10px;
+	padding-top: 10px;
+}
+.settings_screen .groups_list .group {
+	transition: .3s;
+	display: flex;
+	/*border-bottom: 1px solid #ccc;*/
+	padding: 10px 10px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
+	border-radius: 10px;
+	margin-bottom: 5px;
+	width: auto;
+	opacity: 0;
+	transform: translateX(-100vw);
+}
+.settings_screen .groups_list .group:last-child() {
+	border: unset !important;
+}
+.settings_screen .groups_list .group .avatar {
+	width: 90px;
+	height: 90px;
+}
+.settings_screen .groups_list .group .avatar img {
+	width: 120%;
+}
+.settings_screen .groups_list .group .info {
+	position: relative;
+	max-width: calc(100% - 110px);
+}
+.settings_screen .groups_list .group .group_name {
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+.settings_screen .groups_list .group button {
+	margin-top: 5px;
+	height: 30px;
+	padding: unset !important;
+	width: 130px;
+	/*font-size: 14px !important; */
+}
+
+.select_city .shortInfo {
+	top: -4px;
+	left: 125px;
+}
+.select_city .shortInfo p {
+	left: -110px;
+}
+.select_city .shortInfo p::before {
+	left: 45.5%;
+}
+.select_city .shortInfo img {
+	transform: scale(.8);
+}
+
+
+
+.select_education_institution .shortInfo {
+	top: -4px;
+	left: 241px;
+}
+.select_education_institution .shortInfo p {
+	left: -164px;
+}
+.select_education_institution .shortInfo p::before {
+	left: 66%;
+}
+.select_education_institution .shortInfo img {
+	transform: scale(.8);
+}
+
+
+
+.select_faculty .shortInfo {
+	top: -4px;
+	left: 161px;
+}
+.select_faculty .shortInfo p {
+	left: -164px;
+}
+.select_faculty .shortInfo p::before {
+	left: 66%;
+}
+.select_faculty .shortInfo img {
+	transform: scale(.8);
+}
+
+
+
+.select_specialization .shortInfo {
+	top: -4px;
+	left: 196px;
+}
+.select_specialization .shortInfo p {
+	left: -164px;
+}
+.select_specialization .shortInfo p::before {
+	left: 66%;
+}
+.select_specialization .shortInfo img {
+	transform: scale(.8);
+}
+
+
+.select_group .shortInfo {
+	top: -4px;
+	left: 127px;
+}
+.select_group .shortInfo p {
+	left: -130px;
+}
+.select_group .shortInfo p::before {
+	left: 53%;
+}
+.select_group .shortInfo img {
+	transform: scale(.8);
+}
+
+
+.have_error {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	display: none;
+
+}
+.have_error .text {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+
+

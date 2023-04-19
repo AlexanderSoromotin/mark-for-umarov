@@ -1,0 +1,105 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		display: fixed;
+		overflow: hidden;
+	}
+	.desktop_form {
+		/*display: none !important;*/
+	}
+	.desktop_form {
+		transform: translate(-50%, -50%) scale(2);
+	}
+	.mobile_form {
+		position: relative;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		width: 100vw !important;
+		height: 100vh !important;
+		border-radius: 0 !important;
+		padding: 0 !important;
+		left: unset !important; 
+     	top: unset !important; 
+     	transform: unset !important;
+     	overflow: hidden;
+	}
+	.mobile_form h1 {
+		font-size: 50px !important;
+		border: unset !important;
+		margin-bottom: 80px !important;
+	}
+	.mobile_form input {
+		font-size: 40px !important;
+		padding: 20px !important;
+		border-radius: 0px !important;
+		margin-bottom: 50px !important;
+		border: unset;
+		border-bottom: 1px solid #ccc;
+	}
+	.mobile_form button {
+		font-size: 40px !important;
+		height: auto !important;
+		border-radius: 45px !important;
+		padding: 20px !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*background-color: unset !important;*/
+	}
+	.mobile_form button img {
+		height: 45px;
+		filter: invert(1);
+		margin-left: 20px;
+		display: none;
+	}
+	.mobile_form label {
+		display: none !important;
+	}
+	.mobile_form h4 {
+		display: none;
+		font-size: 30px !important;
+		color: rgba(0, 0, 0, .5);
+	}
+	.mobile_form h4 a {
+		font-weight: 600;
+		text-decoration: none;
+		color: rgba(0, 0, 0, .5);
+	}
+	.mobile_form div img {
+	    right: 15px;
+	    top: 0px;
+	    z-index: 20;
+	    height: 70px;
+	    padding: 7px;
+	    opacity: .7;
+	    cursor: pointer;
+	}
+	.back {
+		font-size: 50px;
+	}
+	.back img {
+		height: 61px;
+	}
+	.auth_step {
+		transition: .5s;
+		position: absolute !important;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: 100vw;
+		padding: 50px !important;
+		/*display: none !important;*/
+		opacity: 1;
+	}
+	.auth_step.hidden {
+		/*right: calc(var(--vw, 1vh) * 100) !important;*/
+		/*right: -980px !important; */
+		transform: translate(100%, -50%);
+		opacity: 0 !important;
+	}
+	.auth_step.deleted {
+		/*left: calc(var(--vw, 1vh) * 100) !important;*/
+		/*left: -980px !important;*/
+		transform: translate(-100%, -50%);
+		opacity: 0 !important;
+	}
+}

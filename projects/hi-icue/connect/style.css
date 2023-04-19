@@ -1,0 +1,41 @@
+.main {
+	position: absolute;
+	width: 400px;
+	min-height: 200px;
+	background-color: #fff;
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: .9;
+}
+
+body {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.background {
+	position: relative;
+	width: 105%;
+	height: 105%;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+	/*background-color: black;*/
+	overflow: hidden;
+	filter: blur(4px);
+}
+
+.background video {
+	position: absolute;
+	/*top: -2%;*/
+	/*left: -2%;*/
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .8;
+}
+

@@ -1,0 +1,97 @@
+main {
+	position: relative;
+	margin-top: 50px;
+	background-color: #fff;
+	/*overflow-y: auto;*/
+	padding: 10px;
+	/*padding-bottom: 100px;*/
+	overflow-x: hidden;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+body {
+	background-color: #fff;
+	height: 100%;
+	/*position: absolute;*/
+	/*overflow: hidden;*/
+	/*position: fixed;*/
+/*	top: 0;
+	left: 0;*/
+}
+
+.content {
+    display: flex;
+    
+    /*font-weight: 500;*/
+}
+
+.themes {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+}
+.themes .theme {
+	transition: .3s;
+	position: relative;
+	width: calc(50% - 5px);
+	min-height: 150px;
+	max-height: 400px;
+	/*opacity: .6;*/
+	border-radius: 15px;
+}
+.themes .theme::before {
+	transition: .3s;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(90%);
+	height: calc(90%);
+	content: '';
+	/*background-color: rgba(0, 0, 0, .9);*/
+	border: 5px solid rgba(0, 0, 0, .9);
+	border-radius: 15px;
+	opacity: 0;
+}
+.themes .theme.selected::before {
+	width: calc(100% - 5px);
+	height: calc(100% - 5px);
+	opacity: 1;
+}
+.themes .theme .image {
+	/*opacity: 1;*/
+}
+/*.themes .theme.selected::before {*/
+	/*transition: .1s;*/
+
+/*}*/
+.themes .theme .image {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid transparent;
+}
+.themes .theme img {
+	position: relative;
+	width: 105%;
+	height: 105%;
+	object-fit: cover;
+	
+
+}
+.themes .theme button {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 20px);
+	display: none;
+}

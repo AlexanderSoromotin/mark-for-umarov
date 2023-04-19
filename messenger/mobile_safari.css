@@ -1,0 +1,4 @@
+.chats .chat {
+	/*height: calc(100% - 101px - 111px - 215px) !important;*/
+	height: calc(100% - 101px - 111px - 270px) !important;
+}

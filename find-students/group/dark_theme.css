@@ -1,0 +1,27 @@
+body {
+    background-color: #222 !important;
+}
+main {
+    background-color: unset !important;
+}
+.title {
+    color: rgba(255, 255, 255, .3);
+}
+.username {
+    color: rgba(255, 255, 255, .9);
+}
+.status {
+    color: rgba(255, 255, 255, .3);
+}
+.present_students li .status img {
+    filter: invert(1);
+}
+.username img {
+    filter: invert(1);
+}
+.present_students li {
+    background-color: #333 !important;
+}
+.description {
+    color:rgba(255, 255, 255, .3);
+}

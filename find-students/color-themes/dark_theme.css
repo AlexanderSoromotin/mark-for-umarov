@@ -1,0 +1,10 @@
+body {
+    background-color: #222 !important;
+}
+main {
+    background-color: unset !important;
+}
+
+.themes .theme::before {
+    border-color: rgba(255, 255, 255, .9) !important;
+}

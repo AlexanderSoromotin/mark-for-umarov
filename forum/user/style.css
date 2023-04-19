@@ -1,0 +1,552 @@
+.history {
+	/*position: sticky;*/
+	/*top: 90px;*/
+}
+
+.main {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 1060px;
+	padding-bottom: 30px;
+	min-height: calc(100vh - 115px - 131px);
+	display: flex;
+	flex-direction: row;
+	min-width: 695px;
+}
+
+.user-not-found {
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	margin-top: 100px;
+}
+.user-not-found img {
+	width: 70px;
+	opacity: .2;
+	margin-right: 10px;
+}
+.user-not-found h2 {
+	color: rgba(0, 0, 0, .2);
+	font-weight: 800;
+}
+.recent-topics .hidden {
+	transition: .3s !important;
+	opacity: .5;
+	background-color: #DCDCDC;
+}
+.recent-topics .hidden .row-2 p:nth-child(1)::after {
+	/*transition: .1s !important;*/
+	background: linear-gradient(to right, transparent 0%, #dddddd 75%) !important;
+	/*animation: hideTitle .1s forwards !important;*/
+
+	/*background: rgba(0, 0, 0, 1) !important;*/
+}
+.recent-topics .hidden:hover {
+	background-color: #DCDCDC !important;
+}
+.recent-topics .hidden .col-2 {
+	border-left: 1px solid rgba(0, 0, 0, .3) !important;
+}
+.recent-topics .hidden .col-2 button img {
+	opacity: .7 !important;
+}
+.recent-topics .hidden .col-2 button:hover img {
+	opacity: 1 !important;
+}
+
+
+.main .recent-topics {
+	width: 100%;
+	position: relative;
+	background-color: rgba(255, 255, 255);
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	border-radius: 10px;
+	height: auto;
+	/*height: 50px;*/
+	/*margin-top: 40px;*/
+	overflow: hidden;
+	margin-top: 15px;
+	min-width: 695px;
+}
+.main .recent-topics .topic-block {
+	transition: .1s;
+	display: flex;
+	/*flex-direction: row;*/
+	/*padding: 10px;*/
+	border-bottom: 1px solid #ccc;
+	justify-content: none;
+}
+.main .recent-topics .topic-block .col-1 {
+	display: flex;
+	flex-direction: row;
+	width: 695px;
+	padding: 10px;
+	cursor: pointer;
+}
+.main .recent-topics .topic-block .col-2 {
+	border-left: 1px solid #ccc;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+.main .recent-topics .topic-block .col-2 button {
+	transition: .1s;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	/*border: 1px solid rgba(0, 0, 0, .8);*/
+	border-radius: 5px;
+	border: none;
+	/*background-color: rgba(255, 255, 255, .7);*/
+	background-color: unset;
+	cursor: pointer;
+	margin: 0 5px;
+}
+.main .recent-topics .topic-block .col-2 button img {
+	transition: .1s;
+	opacity: .3;
+	cursor: pointer;
+}
+.main .recent-topics .topic-block .col-2 button:hover img {
+	opacity: .6;
+}
+.main .recent-topics .topic-block .col-2 button:hover {
+	/*background-color: rgba(255, 255, 255, .2);*/
+}
+
+.main .recent-topics .topic-block:hover {
+	background-color: rgba(0, 0, 0, .05);
+}
+.main .recent-topics .topic-block:hover .row-2 p:nth-child(1)::after {
+	/*transition: .1s !important;*/
+	background: linear-gradient(to right, transparent 0%, #E6E6E6 75%);
+	animation: hoverOnTitleAfter .1s forwards;
+
+	/*background: rgba(0, 0, 0, 1) !important;*/
+}
+
+@keyframes hoverOnTitleAfter {
+	0% {
+		background: linear-gradient(to right, transparent 0%, #F2F2F2 75%);
+	},
+	100% {
+		background: linear-gradient(to right, transparent 0%, #E6E6E6 75%);
+	}
+}
+
+@keyframes hoverOffTitleAfter {
+	0% {
+		background: linear-gradient(to right, transparent 0%, #E6E6E6 75%);
+	},
+	100% {
+		background: linear-gradient(to right, transparent 0%, #F2F2F2 75%);
+	}
+}
+
+@keyframes hideTitle {
+	0% {
+		background: linear-gradient(to right, transparent 0%, #E6E6E6 75%);
+	},
+	100% {
+		background: linear-gradient(to right, transparent 0%, #dddddd 75%);
+	}
+}
+.main .recent-topics .topic-block .row-1 {
+	position: relative;
+	width: 60px !important;
+	height: 60px !important;
+	margin-right: 10px;
+}
+.main .recent-topics .topic-block .col-1 .row-2 {
+	position: relative;
+	display: flex;
+	/*flex-direction: row;*/
+	flex-direction: column;
+	justify-content: center;
+	width: 595px;
+}
+.main .recent-topics a {
+	text-decoration: none;
+}
+.main .recent-topics .topic-block .row-2 p:nth-child(1) {
+	font-size: 16px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .8);
+	margin-bottom: 3px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.main .recent-topics .topic-block .row-2 p:nth-child(1)::after {
+	/*transition: 1s !important;*/
+	content: '';
+	/*background-color: rgba(0, 0, 0, 1.0);*/
+	background: linear-gradient(to right, transparent 0%, #F2F2F2 75%);
+	width: 70px;
+	height: 21px;
+	position: absolute;
+	right: 0;
+	animation: hoverOffTitleAfter .1s forwards;
+	/*animation: ;*/
+}
+.main .recent-topics .topic-block .row-2 .info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/*text-decoration: none;*/
+}
+.main .recent-topics .topic-block .row-2 .subinfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .5);
+}
+.main .recent-topics .topic-block .row-2 .bullet-point {
+	/*background-color: #27AE60;*/
+	background-color: rgba(0, 0, 0, .4);
+	width: 3px;
+	height: 3px;
+	content: '';
+	margin: 0 8px;
+	border-radius: 50%;
+	/*font-size: 20px;*/
+}
+.main .recent-topics .topic-block .row-2 b {
+	color: rgba(0, 0, 0, .4);
+	font-weight: 600;
+	font-size: 13px;
+}
+.main .recent-topics .topic-block .photo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+}
+.main .recent-topics .topic-block .photo img {
+	position: relative;
+	width: 100%;
+}
+.main .recent-topics .topic-block .row-2 .group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, .08);
+	border-radius: 5px;
+	font-size: 12px;
+}
+.main .recent-topics .topic-block .row-2 .group img {
+	height: 14px;
+	opacity: .7;
+	margin-right: 5px;
+}
+
+
+.main .recent-topics h3 {
+	padding: 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.main .recent-topics h3 a {
+	font-weight: 600;
+	text-decoration: underline;
+}
+.main .recent-topics .list {
+	transition: .3s;
+	background-color: rgba(0, 0, 0, .05);
+}
+.main .empty {
+	min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .4);
+    font-weight: 600;
+}
+
+
+.main center h2 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	/*display: none;*/
+}
+
+.main .add_interest {
+	border-radius: 10px;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.editPanel .editTopic {
+	transform: translate(-50%, -50%);
+	max-width: 700px;
+	/*min-width: 700px;*/
+	/*min-height: 500px;*/
+}
+
+.editPanel .editTopic .content {
+	/*margin-top: 20px;*/
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.editPanel .editTopic .row-1 {
+	display: flex;
+
+}
+.editPanel .editTopic .row-1 .col-1 {
+	margin-right: 15px;
+}
+.editPanel .editTopic .row-1 .col-1, .editPanel .editTopic .row-1 .col-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.editPanel .editTopic span {
+	/*padding: 5px;*/
+	position: relative;
+	display: flex;
+	/*align-items: center;*/
+	cursor: text;
+	/*background-color: rgba(0, 0, 0, .05);*/
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 14px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	height: 36px;
+	z-index: 210;
+	width: 250px;
+}
+
+.editPanel .editTopic span img {
+	padding: 5px 10px;
+	opacity: .9;
+	/*margin: 0 10px 0 10px;*/
+	/*border: 1px solid;*/
+}
+.editPanel .editTopic span input {
+	margin: unset;
+	padding: unset !important;
+	border: unset !important;
+	margin: unset !important;
+	height: 100%;
+	width: 100%;
+	outline: none;
+	/*border: 1px solid;*/
+	height: 36px;
+	background-color: unset !important;
+	font-size: 14px;
+}
+.editPanel .editTopic span ul {
+	transition: .2s height;
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	left: 0;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);;
+	overflow: hidden;
+	overflow-y: auto;
+	height: auto;
+	/*min-height: 29px;*/
+	min-height: 100px;
+	max-height: 200px;
+	display: none;
+	top: 40px;
+}
+.editPanel .editTopic .subsections-show ul {
+	display: inline !important;
+}
+.editPanel .editTopic span ul li {
+	transition: .1s;
+	padding: 5px 0 5px 5px;
+	cursor: pointer;
+	font-size: 14px;
+	border-bottom: 1px solid rgba(0, 0, 0, .07);
+}
+.editPanel .editTopic span ul li.hidden {
+	display: none;
+}
+.editPanel .editTopic span ul li:hover {
+	background-color: rgba(0, 0, 0, .04);
+}
+.editPanel .editTopic span ul h5 {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.editPanel .editTopic span ul a {
+	text-align: center;
+	/*margin-top: 10px;*/
+	font-size: 14px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+.editPanel .editTopic span ul a div {
+	width: 90%;
+	background-color: rgba(0, 0, 0, .9);
+	padding: 5px;
+	color: #fff;
+	border: unset;
+	border-radius: 10px;
+}
+.editPanel .editTopic span ul a div:hover {
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.editPanel .editTopic .row-1 .col-2 input {
+	height: 36px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: 385px;
+	width: 650px !important;
+	padding: 10px;
+	outline: none;
+	font-size: 14px;
+}
+.editPanel .editTopic .row-1 .col-1 select {
+	width: 200px;
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	outline: none;
+	margin-top: 2px;
+	margin-top: 5px;
+	height: 36px;
+}
+
+.editPanel .editTopic .row-2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+.editPanel .editTopic .row-2 textarea {
+	width: 650px;
+	border-radius: 5px;
+	padding: 5px;
+	resize: none;
+	outline: none;
+	height: 100px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+.editPanel .editTopic .settings {
+	list-style: none;
+	margin-top: 15px;
+}
+.editPanel .editTopic .settings-1 {
+	display: flex;
+	flex-direction: row;
+}
+.editPanel .editTopic .settings-1 div {
+	margin-right: 15px;
+}
+.editPanel .editTopic .settings li {
+	position: relative;
+	display: flex;
+	align-items: center;
+	/*margin-bottom: 15px;*/
+}
+.editPanel .editTopic .settings li:nth-child(1) {
+	align-items: unset;
+	flex-direction: column;
+}
+.editPanel .editTopic .settings input {
+	zoom: 150%;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.editPanel .editTopic .settings select {
+	width: 200px;
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	outline: none;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+.editPanel .editTopic button {
+	position: relative;
+	width: 100%;
+}
+.editPanel .editTopic .loading::after {
+	left: unset !important;
+	right: 	227px;
+	/*transform: translate(70%, -50%) !important;*/
+	width: 27px !important;
+	height: 27px !important;
+	content: '';
+	filter: invert(1);
+
+}
+.editPanel .editTopic .settings .shortInfo {
+	left: 75px;
+	top: -5px;
+}
+.editPanel .editTopic .settings .shortInfo img {
+	transform: scale(.7);
+}
+.editPanel .editTopic .settings .shortInfo p {
+	left: -80px;
+	top: 35px;
+	width: 400px;
+}
+.editPanel .editTopic .settings .shortInfo p::before {
+	left: 87px;
+}
+.editPanel .editTopic .publish {
+	/*margin-top: 10px;*/
+}
+.editPanel .editTopic .published {
+	opacity: .7;
+	cursor: not-allowed;
+}
+
+.editPanel {
+	/*display: flex !important;*/
+	/*opacity: 1 !important;*/
+}
+.editTopic .error-message {
+	color: #FF605D;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+	height: 15px;
+	margin-bottom: 10px;
+}
+.loadMore {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.delete-this-record {
+	width: 160px;
+	position: absolute;
+	right: 20px;
+	bottom: 100px;
+}

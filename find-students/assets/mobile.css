@@ -1,0 +1,19 @@
+@media screen and (min-width: 767px)  {
+    header .header {
+    	justify-content: start;
+    }
+    header .tabs {
+    	display: inline;
+    	left: 20px;
+    }
+    header .avatar {
+    	display: flex !important;
+    }
+    .mobile_footer {
+    	border: unset;
+    	background-color: #EDEEF0;
+    }
+    .mobile_footer ul {
+    	display: none !important;
+    }
+}

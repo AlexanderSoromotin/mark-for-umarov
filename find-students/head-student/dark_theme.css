@@ -1,0 +1,43 @@
+body {
+    background-color: #222 !important;
+}
+main {
+    background-color: unset !important;
+}
+.title {
+    color: rgba(255, 255, 255, .3) !important;
+}
+.group_screen .tabs {
+    background-color: #333 !important;
+    border-color: #444 !important;
+}
+.group_screen .tabs li.selected {
+    color: rgba(255, 255, 255, .75);
+}
+.group_screen .tabs ul li {
+    color: rgba(255, 255, 255, .2);
+}
+.username {
+    color: rgba(255, 255, 255, .9);
+}
+.status {
+    color: rgba(255, 255, 255, .3);
+}
+.buttons button img {
+    filter: invert(1);
+}
+.students_list li, .requests li, .present_students li {
+    background-color: #333;
+}
+.missing_student {
+    background-color: rgba(255, 0, 0, .12) !important;
+}
+.username img {
+    filter: invert(1);
+}
+.status img {
+    filter: invert(1);
+}
+.description {
+    color:rgba(255, 255, 255, .3);
+}

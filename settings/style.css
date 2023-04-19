@@ -1,0 +1,137 @@
+.history {
+	/*position: sticky;*/
+	/*top: 90px;*/
+}
+
+.main {
+	min-height: calc(100vh - 261px);
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	/*flex-direction: column;*/
+	flex-direction: row;
+	padding-bottom: 50px;
+}
+.info {
+	width: 500px;
+	text-align: center;
+	margin-top: 5px;
+}
+.main .col-1 {
+	margin-left: -280px;
+}
+.main .menu {
+	position: relative;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	width: 250px;
+	margin-right: 30px;
+	/*height: 100%;*/
+	overflow: hidden;
+}
+.main .col-1 button {
+	position: relative;
+	width: 250px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.main .menu ul {
+	position: relative;
+	width: 100%;
+}
+.main .menu ul li {
+	transition: .1s;
+	position: relative;
+	width: 100%;
+	list-style: none;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	opacity: .4;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .8);
+}
+.main .menu ul li img {
+	transition: .1s;
+	position: relative;
+	/*width: 40px;*/
+	margin-right: 10px;
+	opacity: .8;
+}
+.main .menu ul li:hover {
+	background-color: rgba(0, 0, 0, .05);
+}
+.main .menu ul .selected {
+	opacity: .8;
+	background-color: rgba(0, 0, 0, .05);
+}
+.form {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+.main .form .formBlock {
+	display: none;
+}
+form input {
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, .3);
+	font-size: 16px;
+	/*margin-bottom: 20px;*/
+
+}
+form input::placeholder, form textarea::placeholder {
+	color: rgba(0, 0, 0, .4);
+}
+.form h1 {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+form textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, .3);
+	font-size: 16px;
+	resize: none;
+	height: 150px;
+}
+form p {
+	color: rgba(0, 0, 0, .3);
+}
+.form button {
+	/*margin-top: 10px;*/
+	width: 100%;
+}
+.message {
+	font-size: 16px;
+	margin: 15px 0 5px 0;
+	text-align: center;
+	height: 19px;
+	color: #FF605D;
+}
+
+.education textarea {
+	height: 75px;
+}
+
+
+.mobile_settings {
+	display: none;
+}
+
+
+

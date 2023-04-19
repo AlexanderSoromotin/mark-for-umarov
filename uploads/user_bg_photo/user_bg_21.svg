@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="500" height="500" viewBox="-1 -1 2 2" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 -1 
+             A 1,1 0 0,1 1 0             L 0,0
+             z" fill="#fdffff" />
+            <path d="M 1 0 
+             A 1,1 0 0,1 0 1             L 0,0
+             z" fill="#fefdff" />
+            <path d="M 0 1 
+             A 1,1 0 0,1 -1 0             L 0,0
+             z" fill="#fffdfd" />
+            <path d="M -1 0 
+             A 1,1 0 0,1 -0 -1             L 0,0
+             z" fill="#fefffd" />
+    </svg>

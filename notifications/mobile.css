@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.main {
+		padding-top: 100px;
+	}
+	.all-notifications h2 {
+		display: none;
+	}
+	.all-notifications {
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+	}
+	.all-notifications ul li {
+	    padding: 25px;
+	    border-bottom: 1px solid #ccc;
+	    display: flex;
+	    width: 100%;
+	    background-color: rgba(0, 0, 0, .03);
+	}
+	.all-notifications ul li .image {
+	    width: 130px;
+	    height: 130px;
+	    border: 1px solid #ccc;
+	    margin-right: 15px;
+	}
+	.all-notifications ul li .body p {
+		font-size: 32px;
+	}
+	.all-notifications ul li .body p.date {
+		font-weight: 600;
+	    font-size: 25px;
+	    margin-top: 15px;
+	    color: rgba(0, 0, 0, .3);
+	}
+}

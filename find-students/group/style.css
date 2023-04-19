@@ -1,0 +1,241 @@
+main {
+	position: relative;
+	margin-top: 50px;
+	/*background-color: #fff;*/
+	background-color: #EDEEF0;
+	padding-top: 10px;
+	max-height: calc(100vh - 100px);
+	overflow-y: auto;
+	/*border-bottom: 50px;*/
+	/*padding-bottom: 100px;*/
+	height: 100vh !important;
+	overflow-x: hidden;
+}
+body {
+	background-color: #fff;
+	height: 100%;
+}
+main .avatar {
+	height: 40px;
+	width: 40px;
+}
+main ul {
+	list-style: none;
+}
+main ul li {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	/*border-top: 1px solid #ccc;*/
+	/*border-bottom: 1px solid #ccc;*/
+	/*margin-top: -1px;*/
+	padding: 10px;
+}
+.title {
+	font-size: 14px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, .3);
+	margin: 10px 0;
+}
+.missing_students .title {
+	margin-top: 20px;
+}
+.present_students .title {
+	margin-top: 30px;
+}
+.username {
+	font-size: 16px;
+	/*font-weight: 600;*/
+	display: flex;
+	align-items: center;
+	/*margin-bottom: 5px;*/
+}
+.group_screen .user_info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.username img {
+	height: 19px;
+	margin-left: 5px;
+	opacity: .9;
+}
+.status {
+	font-size: 12px;
+	/*font-weight: 600;*/
+	color: rgba(0, 0, 0, .3);
+	display: flex;
+	align-items: center;
+}
+.missing_students li {
+	opacity: .6;
+	/*background-color: rgba(255, 0, 0, .13);*/
+	/*background-color: rgba(0, 0, 0, .1);*/
+}
+.present_students li .status img {
+	height: 14px;
+	opacity: .3;
+	margin-left: 2px;
+}
+.present_students li {
+	background-color: #fff;
+}
+.screen {
+	transition: .5s;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	opacity: 1;
+	min-height: 100%;
+}
+.screen.hidden {
+	/*right: calc(var(--vw, 1vh) * 100) !important;*/
+	/*right: -980px !important; */
+	transform: translate(100%, 0%);
+	opacity: 0 !important;
+}
+.screen.deleted {
+	/*left: calc(var(--vw, 1vh) * 100) !important;*/
+	/*left: -980px !important;*/
+	transform: translate(-100%, 0%);
+	opacity: 0 !important;
+}
+
+.request_screen {
+	padding: 20px;
+}
+.request_screen .group {
+	background-color: #fff;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+}
+.request_screen .group .avatar {
+	width: 107px;
+	height: 107px;
+}
+.request_screen .group_name {
+	font-weight: 600;
+}
+.request_screen .institute_info {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .4);
+	margin-top: 3px;
+}
+.request_screen .institute_info img {
+	height: 15px;
+	opacity: .4;
+	margin-top: -1px;
+}
+.bullet_point {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	/*background-color: rgba(0, 0, 0, .5);*/
+	background-color: #27A36B;
+}
+.students_info {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(0, 0, 0, .5);
+	font-weight: 600;
+	font-size: 15px;
+	margin-top: 5px;
+}
+.students_info img {
+	height: 19px;
+	opacity: .5;
+	margin-right: 5px;
+}
+.students_info .bullet_point {
+	margin-right: 9px;
+	margin-left: 5px;
+}
+.head_of_group_info {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(0, 0, 0, .5);
+	font-weight: 600;
+	font-size: 15px;
+}
+.head_of_group_info img {
+	height: 19px;
+	opacity: .5;
+	margin-right: 5px;
+}
+.request_screen .info {
+	width: auto;
+}
+.request_screen .info button {
+	margin-top: 10px;
+	width: 100%;
+}
+.request_screen .info .button-5 {
+	opacity: .6 !important;
+}
+.description {
+	text-align: center;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .3);
+}
+.add_request_screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.add_request_screen button {
+	margin-top: 10px;
+}
+.group_screen.loading ul {
+	opacity: .5;
+}
+.group_screen {
+	padding-bottom: 70px;
+}
+.reload {
+	transition: .5s;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	opacity: .5;
+	z-index: 50;
+	width: 30px;
+	height: 30px;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.no_missing_students, .no_present_students {
+	/*background-color: #fff !important;*/
+	border: unset;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	display: none;
+	opacity: .5;
+	/*margin-top: -10px;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*margin-bottom: -30px;*/
+}
+.no_missing_students img, .no_present_students img {
+	border: none;
+	height: 23px;
+	width: 23px;
+	margin-right: 5px;
+}
+.no_missing_students .username, .no_present_students .username {
+	font-weight: 600 !important;
+}

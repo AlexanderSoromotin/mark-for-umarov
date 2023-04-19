@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		/*display: fixed;*/
+		/*overflow: hidden;*/
+	}
+	
+	.back {
+		font-size: 50px;
+	}
+	.back img {
+		height: 61px;
+	}
+	
+}

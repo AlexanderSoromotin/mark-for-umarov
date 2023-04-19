@@ -1,0 +1,54 @@
+.main {
+	min-height: calc(100vh - 240px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.crane_404 .image {
+	position: relative;
+	right: 35px;
+	top: 10px;
+}
+.crane_404 img { 
+	height: 110px;
+	opacity: .3;
+}
+.crane_404 .text {
+	position: relative;
+	font-weight: 700;
+	color: rgba(0, 0, 0, .3);
+	left: 35px;
+	top: -20px;
+}
+.description {
+	margin-top: 30px;
+	font-weight: 600;
+	color: 	rgba(0, 0, 0, .4);
+}
+.services {
+	position: relative;
+	margin-top: 10px;
+}
+.services a {
+	text-decoration: none;
+}
+.services .service {
+	/*text-decoration: none;*/
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, .05);
+}
+.services .service .title {
+	font-weight: 600;
+}
+.services .service .users {
+	color: rgba(0, 0, 0, .4);
+	font-size: 12px;
+	margin-top: 10px;
+}

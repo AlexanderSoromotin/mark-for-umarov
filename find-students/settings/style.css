@@ -1,0 +1,102 @@
+.profile_block {
+	display: flex;
+	flex-direction: row;
+	padding: 15px 15px 0 15px;
+	margin-bottom: 25px;
+}
+main {
+	position: relative;
+	margin-top: 50px;
+	padding-bottom: 70px;
+}
+main .avatar {
+	height: 60px;
+	width: 60px;
+}
+.username {
+	font-size: 16px;
+	/*font-weight: 700;*/
+}
+.user_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.user_email {
+	font-size: 12px;
+	/*font-weight: 700;*/
+	margin-top: 5px;
+	color: rgba(0, 0, 0, .3);
+}
+.title {
+	font-size: 14px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, .3);
+	margin: 10px 0;
+}
+.settings_block {
+	position: relative;
+	width: 100vw;
+}
+.settings_block ul {
+	position: relative;
+	width: 100%;
+	list-style: none;
+	/*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+	/*box-shadow: 0 0px 5px 5px rgb(60 64 67 / 5%), 0 6px 6px 2px rgb(60 64 67 / 5%) !important;*/
+	background-color: #fff;
+}
+.settings_block ul a {
+	text-decoration: none;
+	/*font-weight: 600;*/
+}
+.settings_block ul li {
+	position: relative;
+	font-size: 16px;
+	padding: 10px;
+	/*border-top: 1px solid rgba(0, 0, 0, .05);*/
+	/*border-bottom: 1px solid rgba(0, 0, 0, .05);*/
+	margin-top: -1px;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .75);
+}
+.settings_block ul li span {
+	font-size: 16px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .75);
+}
+.settings_block ul li img {
+	height: 25px;
+	opacity: .75;
+	margin-right: 10px;
+}
+
+/*.settings_block ul li.notification::after {
+    position: absolute;
+    content: '';
+    width: 10px !important;
+    height: 10px !important;
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+    background-color: #F65F5F;
+    top: 50% !important;
+    transform: translateY(-50%);
+    right: 20px !important;
+}*/
+
+.settings_block ul li.notification::after {
+    position: absolute;
+    content: '';
+    width: 8px !important;
+    height: 8px !important;
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+    background-color: #F65F5F;
+    /*top: 50% !important;*/
+    /*transform: translateY(-50%);*/
+    top: 8px;
+    left: 24px !important;
+}

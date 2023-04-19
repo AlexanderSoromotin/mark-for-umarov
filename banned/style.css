@@ -1,0 +1,35 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+footer {
+	display: none;
+}
+.main {	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.main p {
+	margin: 20px 0;
+}
+.main button {
+	margin: 5px;
+	width: 250px
+}
+b {
+	font-weight: bold;
+}
+main h1 {
+
+}
+
+
+
+
+
+
+

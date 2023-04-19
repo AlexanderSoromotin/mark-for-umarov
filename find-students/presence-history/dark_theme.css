@@ -1,0 +1,30 @@
+body {
+    background-color: #222 !important;
+}
+main {
+    background-color: unset !important;
+}
+.username {
+    color: rgba(255, 255, 255, .9);
+}
+.presence_screen .date {
+    color: rgba(255, 255, 255, .4);
+}
+.empty_history p {
+    color: rgba(255, 255, 255, .9);
+}
+.presence_screen ul li .time {
+    color: rgba(255, 255, 255, .75);
+}
+.presence_screen ul li img {
+    filter: invert(1);
+}
+.presence_screen ul li b {
+    color: rgba(255, 255, 255, .5);
+}
+.presence_history::after {
+    background: linear-gradient(to top, #222, transparent);
+}
+.presence_history::before {
+    background: linear-gradient(to bottom, #222, transparent);
+}
